@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        repo: ["owner/repo"]
+        repo: ["yousouf9/be_service"]
     steps:
       - name: push update to repository
         uses: peter-evans/repository-dispatch@v2
