@@ -5,6 +5,7 @@ interface UserI {
   email: string;
   password: string;
   username: string;
+  token: string;
 }
 
 const userSchema = new Schema<UserI>({
@@ -12,6 +13,7 @@ const userSchema = new Schema<UserI>({
     type: String,
     required: true,
     unique: true,
+    lowercase:true
   },
   password:{
     type: String,
@@ -20,7 +22,10 @@ const userSchema = new Schema<UserI>({
   username:{
     type: String,
     required: true
-  }
+  },
+  token:{
+    type: String,
+  },
 },
 { 
   timestamps:true,
@@ -44,4 +49,3 @@ userSchema.pre('save', async function(){
 })
 
 export { userSchema, UserI};
-
