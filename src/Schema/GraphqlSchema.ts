@@ -4,9 +4,10 @@ const typeDefs = gql`
     accessToken: String
     refreshToken: String
   }
-
   type Mutation {
     login(username: String, password: String!): Tokens
   }
 `;
+
+
 export {typeDefs}

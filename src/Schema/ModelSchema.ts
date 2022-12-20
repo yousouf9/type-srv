@@ -43,5 +43,6 @@ userSchema.pre('save', async function(){
    }
 })
 
-export { userSchema, UserI};
 
+//export schema and interface
+export { userSchema, UserI};
