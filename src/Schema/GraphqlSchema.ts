@@ -9,5 +9,5 @@ const typeDefs = gql`
   }
 `;
 
-
+//export schema and same and what
 export {typeDefs}
