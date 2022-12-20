@@ -8,7 +8,7 @@ jobs:
         repo: ["owner/repo"]
     steps:
       - name: push update to repository
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           repository: ${{ matrix.repo }}
