@@ -9,5 +9,4 @@ const typeDefs = gql`
     login(username: String, password: String!): Tokens
   }
 `;
-
 export {typeDefs}
