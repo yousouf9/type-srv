@@ -1,5 +1,5 @@
-import { gql } from "apollo-server-express";
-const typeDefs = gql`
+
+const typeDefs =`#graphql
   type User {
     username: String
     email: String
